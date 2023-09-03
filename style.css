@@ -1,0 +1,469 @@
+:root
+{
+    --pink : #e3dffd7c;
+    --merah : #25113b;
+    --hijau : #363636;
+    --hijau-tua : #fcfefa;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Tahoma';
+}
+
+body 
+{
+    background: url(https://img.freepik.com/free-photo/black-marble-patterned-texture-background-marble-thailand-abstract-natural-marble-black-white-design_1253-917.jpg?size=626&ext=jpg&ga=GA1.19811055127.1691216127&semt=ais);
+    color: var(--hijau-tua);
+}
+
+header
+{
+    text-align: center;
+    background-color: var(--pink);;
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    padding: 2%;
+    top: 0;
+}
+
+.title
+{
+    background: linear-gradient(rgb(14, 11, 15), #c9096c);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid var(--hijau-tua);
+    font-size: 15pt;
+}
+
+.input-search
+{
+    width: 30%;
+    border: none;
+    border-radius: 0 0 0 20px;
+    padding: 2px;
+}
+
+.input-submit
+{
+    margin-left: -5px;
+    border: none;
+    border-radius: 0 20px 0 0;
+    padding: 2px;
+    background-color: var(--hijau);
+    color: var(--hijau-tua);
+    width: 5%;
+    font-weight: bold;
+}
+
+nav
+{
+    margin-top: 15px;
+}
+
+nav ul 
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a
+{
+    color: var(--hijau);
+}
+
+nav ul li a:hover
+{
+    border-bottom: 3px solid var(--hij-tua);
+}
+
+.slider
+{
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 65%;
+}
+
+.slider h4
+{
+    margin-top: 20%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.slides img 
+{
+    border-radius: 10px;
+}
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--pink);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--pink);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #363636;
+}
+
+.popup .close:hover 
+{
+    color: #c9096c;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--pink);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--pink);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #363636;
+}
+
+.popup .close:hover 
+{
+    color: #c9096c;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.title-p
+{
+    margin-top: 5%;
+    margin-left: 60px;
+}
+
+.populer
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.populer img
+{
+    border-radius: 10px;
+}
+
+.title-s
+{
+    margin-top: 5%;
+    margin-left: 60px;
+}
+
+.streaming
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.streaming img
+{
+    border-radius: 10px;
+}
+
+.title-v
+{
+    margin-top: 5%;
+    margin-left: 60px;
+}
+
+.voucher
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.voucher img
+{
+    border-radius: 10px;
+}
+
+.harga
+{
+    color: var(--merah);
+    font-size: 13pt;
+}
+
+.link a
+{
+    color: var(--hijau-tua);
+    font-size: 17px;
+}
+
+.link a:hover
+{
+    color: #c9096c;
+}
+
+.pesan
+{
+    background-color: #91d4a7;
+    padding: 5%;
+    border-radius: 10px;
+    color: black;
+}
+
+.pesan:hover
+{
+    background-color: #2c5744d8;
+}
+
+.pesan img
+{
+    width: 30px;
+}
+
+.cara
+{
+    color: var(--hijau-tua);
+    margin-left: 30px;
+    display: flex;
+    font-size: 14pt;
+}
+
+.card-c
+{
+    margin-top: 5%;
+    margin-left: 3%;
+    background-color: var(--pink);
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 20px 20px black;
+}
+
+.card-c h1 .title-c
+{
+    text-align: center;
+}
+
+
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 7%;
+    font-size: 15pt;
+}
+
+.card
+{
+    background-color: var(--pink);
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 20px 20px black;
+}
+
+.card h1
+{
+    text-align: center;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.title-k
+{
+    font-weight: bold;
+    background: linear-gradient(rgb(14, 11, 15), #c9096c);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid var(--hijau-tua)
+}
+
+footer
+{
+    display: grid;
+    justify-content: center;
+    background-color: var(--pink);
+    margin-top: 10%;
+    padding: 2%;
+}
+
+.sosmed img
+{
+    width: 50px;
+    justify-items: center;
+    margin-top: 3%;
+}
+
+#copyright
+{
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width:600px)
+{
+    nav ul li a
+    {
+        font-size: 11pt;
+    }    
+
+    .slider
+    {
+        display: none;
+    }
+
+    .title-p
+    {
+        margin-top: 6rem;
+        margin-left: 0;
+    }
+
+    .populer
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        font-size: 10pt;
+    }
+
+    .link img 
+    {
+        width: 80px;
+    }
+
+    .tentang
+    {
+        width: 90px;
+        padding-left: 2rem;
+        font-size: 13pt;
+    }
+    .sosmed
+    {
+        font-size: 10pt;
+        padding-left: 6rem;
+    }
+
+    .sosmed img
+    {
+        width: 10%;
+    }
+}
